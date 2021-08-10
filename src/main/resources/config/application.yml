@@ -1,0 +1,10 @@
+news:
+  msg:
+    bad: 'bad news from /config/application.yml :('
+    good: 'good news from /config/application.yml :)'
+
+spring.jackson.date-format: "EEE, d MMM yyyy HH:mm:ss Z"
+
+spring.profiles.active: prod
+
+management.endpoints.web.exposure.include: health, info

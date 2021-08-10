@@ -1,0 +1,8 @@
+news:
+  msg:
+    bad: 'bad news from /config/application-prod.yml :('
+    good: 'good news from /config/application-prod.yml :)'
+
+config: prod configuration
+
+
