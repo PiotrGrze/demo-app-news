@@ -1,13 +1,13 @@
 package com.example.demoappnews.models;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 
 public class GoodNews {
 
 
     private String description;
-    private LocalDateTime localDateTime;
+    private Date timestamp;
     private String configEnv;
     private String urlPoint;
 
@@ -19,12 +19,12 @@ public class GoodNews {
         this.description = description;
     }
 
-    public LocalDateTime getLocalDateTime() {
-        return localDateTime;
+    public Date getTimestamp() {
+        return timestamp;
     }
 
-    public void setLocalDateTime(LocalDateTime localDateTime) {
-        this.localDateTime = localDateTime;
+    public void setTimestamp(Date timestamp) {
+        this.timestamp = timestamp;
     }
 
     public String getConfigEnv() {

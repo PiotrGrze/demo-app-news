@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
-import java.time.LocalDateTime;
+import java.util.Date;
 
 @RestController
 @RequestMapping("/api/v1/good-news")
@@ -25,8 +25,7 @@ public class GoodNewsController {
         GoodNews goodNews = new GoodNews();
         goodNews.setDescription(goodNewsMessage);
         goodNews.setUrlPoint(request.getRequestURI());
-//TODO: localdatetime --> new Date
-        goodNews.setLocalDateTime(LocalDateTime.now());
+        goodNews.setTimestamp(new Date());
         goodNews.setConfigEnv(configEnv);
         return goodNews;
     }
