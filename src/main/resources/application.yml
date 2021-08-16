@@ -6,7 +6,12 @@ news:
 spring:
   jackson:
     date-format: "EEE, d MMM yyyy HH:mm:ss Z"
+  profiles:
+    active: prod
 
-spring.profiles.active: prod
 
-management.endpoints.web.exposure.include: health, info
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, info
