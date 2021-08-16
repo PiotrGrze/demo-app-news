@@ -15,3 +15,10 @@ management:
     web:
       exposure:
         include: health, info
+
+
+# Configuring: info endpoint
+info:
+  app:
+    description: This is my first spring boot application
+    name: demo-app-news
