@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 
 
 @RestController
@@ -20,7 +21,7 @@ public class BadNewsController {
 
     @GetMapping
     public NewsDTO showBadNews(HttpServletRequest request) {
-        return new NewsDTO(badNewsMessage, configEnv,request.getRequestURI());
+        return new NewsDTO(badNewsMessage, new Date(), configEnv,request.getRequestURI());
     }
 
 
